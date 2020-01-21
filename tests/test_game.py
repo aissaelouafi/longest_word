@@ -20,3 +20,8 @@ class TestGame(unittest.TestCase):
         game = Game()
         game.grid = ['']
         self.assertEqual(game.is_valid(''),False)
+
+    def test_unknown_word_is_invalid(slef):
+        game = Game()
+        game.grid = list('KWIENFUQW')
+        self.assertIs(new_game.is_valid('FEUN'), False)
